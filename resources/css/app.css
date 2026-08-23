@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+/* 1. Sets manual dark mode toggling using a class on the html/body element */
+@custom-variant dark (&:where(.dark, .dark *));
+
+
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 
